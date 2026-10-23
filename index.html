@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Google Cloud Verification</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Google Cloud Verification</h1>
+    <p class="subtitle">Sign in with your Google account to continue.</p>
+
+    <div class="sign-in-row">
+      <button id="google-sign-in" type="button">Continue with Google</button>
+      <button id="sign-out" class="secondary-button" type="button" hidden>Sign out</button>
+    </div>
+
+    <p id="sign-in-status" class="status">Not signed in</p>
+    <p id="sign-in-error" class="error" role="alert" hidden></p>
+
+    <nav>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </main>
+</body>
+</html>
