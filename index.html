@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Google Cloud Verification</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Google Cloud Verification</h1>
+    <p class="subtitle">Sign in with your Google account to continue.</p>
+
+    <div
+      id="g_id_onload"
+      data-client_id="YOUR_GOOGLE_OAUTH_CLIENT_ID"
+      data-callback="handleCredentialResponse"
+      data-auto_prompt="false"
+    ></div>
+
+    <div class="sign-in-row">
+      <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline" data-text="signin_with"></div>
+    </div>
+
+    <p id="sign-in-status" class="status">Not signed in</p>
+
+    <nav>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </main>
+</body>
+</html>
